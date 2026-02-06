@@ -1,0 +1,26 @@
+#from https://github.com/sattarov/AnoDDAE/blob/v0.1.0/src/config.yaml
+seed: 49
+
+train:
+  setting: semi-supervised
+  lr: 0.001
+  epochs: 100
+  eval_epochs: 10
+  batch_size: 64
+
+data:
+  name: 17_InternetAds.npz
+  path: CLOE/datasets/
+  normalize: true
+
+model:
+  hidden_dim: [512, 512]
+  activation: lrelu # relu, lrelu, tanh, sigmoid
+
+diffusion:
+  num_timesteps: 50
+  beta_start: 0.0001
+  beta_end: 0.02
+  scheduler: linear # linear, cosine, quadratic, exponential, sigmoid
+  time_emb_dim: 4
+  time_emb_type: sinusoidal # sinusoidal or learned
