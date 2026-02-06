@@ -1,2 +1,2 @@
 # CLOE
-Code accompanying the paper submission to KK26 conference.”
+Code accompanying the paper submission to KDD26 conference.
