@@ -7,5 +7,5 @@ matplotlib
 argparse
 torchvision
 optuna
-torchkde
+torch-kde
 # adbench
